@@ -89,19 +89,19 @@ Highlights important business insights through:
 
 ### Executive Summary
 
-![Executive Summary](Dashboard/Executive_Summary.png)
+![Executive Summary](Dashboard/Executive_Summary.png.png)
 
 ### Maps
 
-![Maps](Dashboard/Maps.png)
+![Maps](Dashboard/Maps.png.png)
 
 ### Product Details
 
-![Product Details](Dashboard/Product_Details.png)
+![Product Details](Dashboard/Product_Details.png.png)
 
 ### Insights
 
-![Insights](Dashboard/Insights.png)
+![Insights](Dashboard/Insights.png.png)
 
 ---
 
