@@ -1,37 +1,206 @@
-# End-to-End E-Commerce Sales Performance Dashboard with Live MySQL Integration
+# E-Commerce Sales Data Pipeline & Performance Analysis
 
-## 📌 Project Overview
-This project demonstrates an end-to-end data analytics pipeline. The workflow involves extracting raw transactional sales data, cleaning and prepping it within Microsoft Excel, building a relational database schema inside MySQL Workbench to securely warehouse the data, and finally establishing a live pipeline connection to Microsoft Power BI for dynamic executive dashboarding.
-
----
-
-## 💼 Business Problem & Objectives
-The company's management was struggling to track accurate sales metrics due to fragmented raw data stored in spreadsheets containing human entry errors (such as negative transactional amounts and invalid data flags). 
-
-**Objectives:**
-1. Clean and standardize the raw transactional dataset.
-2. Build a structured, scalable relational database to warehouse sales records.
-3. Establish an automated/live database connection to Power BI to eliminate manual reporting.
-4. Extract key business insights regarding geographical performance and product demand.
+An end-to-end data analytics project that transforms raw E-Commerce sales data into actionable business insights using **Excel, MySQL, SQL, Power BI, and DAX**.
 
 ---
 
-## 🛠️ Tech Stack Used
-- **Data Preprocessing & Cleaning:** Microsoft Excel
-- **Data Warehousing & Querying:** MySQL Server / MySQL Workbench
-- **ETL, Data Modeling & Visualization:** Microsoft Power BI (Power Query)
+## 📊 Project Overview
+
+This project demonstrates a complete sales analytics workflow, starting with raw transactional data and progressing through data preparation, database analysis, data modeling, and interactive Power BI reporting.
+
+The objective is to identify sales trends, top-performing products, geographic performance, and category-level insights that can support data-driven business decisions.
 
 ---
 
-## ⚙️ Data Pipeline Workflow & Implementation
+## 🎯 Business Questions
 
-### Phase 1: Data Cleaning & Auditing (Excel)
-- Explored the raw dataset to identify transactional errors.
-- Handled negative and erroneous records by adding a structural data status tracking column (`Status = 'OK'` or `Status = 'Invalid'`) to prevent analytical skewing without hard-deleting foundational data audits.
+The analysis focuses on answering key business questions:
 
-### Phase 2: Relational Database Storage (MySQL)
-- Created a robust database structure schema (`ECommerce_DB`) and generated a structured table to mirror optimized properties.
-- Imported the clean tracking dataset into the local MySQL instance.
-- Applied server-side analytical filtering using structural SQL query syntax:
-  ```sql
-  SELECT * FROM sales_data WHERE status = 'OK';
+- Which products generate the highest number of orders?
+- Which products generate the highest revenue?
+- Which cities contribute the most revenue?
+- Which categories and subcategories perform best?
+- Which customers contribute significantly to revenue?
+- What business insights can be derived from the sales data?
+
+---
+
+## 🔄 Project Workflow
+
+```text
+Raw Sales Data
+      ↓
+Data Preparation in Excel
+      ↓
+MySQL Database
+      ↓
+SQL Analysis
+      ↓
+Power BI Data Modeling
+      ↓
+DAX Measures
+      ↓
+Interactive Dashboard
+      ↓
+Business Insights
+```
+---
+
+## 🛠️ Tools & Technologies
+| Tool | Purpose |
+|---|---|
+| Microsoft Excel | Data preparation and initial data handling |
+| MySQL | Database creation and data storage |
+| SQL | Data querying and business analysis |
+| Power BI | Interactive dashboard development |
+| DAX | Measures and analytical calculations |
+| GitHub | Project documentation and portfolio presentation |
+
+---
+
+## 📈 Dashboard
+
+The Power BI report contains four analytical pages:
+
+### 1. Executive Summary
+
+Provides a high-level overview of sales performance and key business metrics.
+
+### 2. Maps
+
+Provides geographic analysis of sales performance across different cities and locations.
+
+### 3. Product Details
+
+Provides detailed product-level analysis and supports drillthrough analysis.
+
+### 4. Insights
+
+Highlights important business insights through:
+
+- Top 10 Products by Orders
+- Top 10 Products by Revenue
+- Category & Subcategory Performance
+- Product Drillthrough Analysis
+
+---
+
+## 📸 Dashboard Preview
+
+### Executive Summary
+
+![Executive Summary](Dashboard/Executive_Summary.png)
+
+### Maps
+
+![Maps](Dashboard/Maps.png)
+
+### Product Details
+
+![Product Details](Dashboard/Product_Details.png)
+
+### Insights
+
+![Insights](Dashboard/Insights.png)
+
+---
+
+## 🗄️ SQL Analysis
+
+The SQL analysis includes:
+
+- Database and table creation
+- Validation of successful sales transactions
+- Revenue analysis by city
+- Product sales volume analysis
+
+Detailed SQL scripts are available in:
+
+`SQL_Scripts/ECommerce_Sales_Analysis.sql`
+
+---
+
+## 💡 Key Analytical Areas
+
+### Sales Performance
+Monitoring sales and revenue performance.
+
+### Product Performance
+Identifying products with the highest order volume and revenue contribution.
+
+### Geographic Performance
+Comparing revenue performance across different cities.
+
+### Category Performance
+Analyzing categories and subcategories to identify strong-performing areas.
+---
+
+## 📂 Repository Structure
+
+```text
+ECommerce-Sales-Data-Pipeline/
+│
+├── PowerBI/
+│   ├── ECommerce_Sales_Analysis.pbix
+│   └── README.md
+│
+├── Dashboard/
+│   ├── Executive_Summary.png
+│   ├── Maps.png
+│   ├── Product_Details.png
+│   └── Insights.png
+│
+├── SQL_Scripts/
+│   ├── ECommerce_Sales_Analysis.sql
+│   └── README.md
+│
+├── Documentation/
+│   └── Project_Summary.md
+│
+└── README.md
+```
+---
+
+## 💼 Business Value
+
+This project demonstrates how raw transactional data can be transformed into useful business intelligence.
+
+The analysis can help stakeholders:
+
+- Monitor sales performance
+- Identify high-performing products
+- Compare geographic performance
+- Understand category and subcategory trends
+- Support data-driven decision-making
+
+---
+
+## 🔐 Data Privacy
+
+This project uses dummy/sample data for portfolio and demonstration purposes.
+
+No confidential, personal, or sensitive business information is included.
+
+---
+
+## 📌 Project Outcome
+
+The project combines:
+
+**Excel + MySQL + SQL + Power BI + DAX**
+
+to demonstrate an end-to-end data analytics workflow covering:
+
+- Data preparation
+- Database management
+- SQL analysis
+- Data modeling
+- DAX calculations
+- Interactive dashboard development
+- Business intelligence and reporting
+
+---
+
+## 👤 Portfolio Project
+
+This project was created as a practical demonstration of data analytics and business intelligence skills.
